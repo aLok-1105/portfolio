@@ -109,7 +109,7 @@ const educationItems: Education[] = [
     location: "Nagpur, Maharashtra, India",
     period: "2021 - Present",
     logo: "./VNIT.png",
-    achievements: ["CGPA: 8.89/10.0", "3rd Rank"],
+    achievements: ["CGPA: 8.88/10.0"],
   },
   {
     institution: "St. Karen's High School",

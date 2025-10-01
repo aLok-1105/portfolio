@@ -7,7 +7,7 @@ const codingProfiles = [
     username: "aloK_11",
     link: "https://codeforces.com/profile/aloK_11",
     logo: "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-2-pack-logos-icons-2944796.png",
-    problems: 357,
+    problems: 414,
     contests: 28,
     rating: "1403 (Specialist)",
   },
@@ -26,9 +26,9 @@ const codingProfiles = [
     username: "alokranjan11052003",
     link: "https://leetcode.com/u/alokranjan11052003/",
     logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
-    problems: 677,
+    problems: 788,
     contests: 10,
-    rating: 1733,
+    rating: 1715,
   },
 ];
 
