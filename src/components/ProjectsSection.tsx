@@ -5,12 +5,19 @@ import { Button } from "@/components/ui/button";
 
 const projectsData = [
   {
+    title: "Careerlyst",
+    description: "Developed an end-to-end AI-powered career development platform with 4 core modules — Real-Time Industry Insights, Resume Builder, Cover Letter Generator, and Interview Preparation — featuring Inngest-based weekly cron automation and secure Clerk + PostgreSQL (Prisma) backend integration.",
+    image: "./careerlyst.png",
+    tags: ["NextJS", "Google Gemini", "Inngest", "Shadcn", "Tailwind CSS", "Prisma"],
+    github: "https://github.com/aLok-1105/careerlyst",
+    demo: "https://careerlyst.vercel.app/",
+  },
+  {
     title: "Driver Monitoring System",
     description: "Used MediaPipe Face Mesh to track facial features and eye movements in real time. Detected driver drowsiness using EAR and mapped gaze positions on the windshield. Logged key metrics every 0.04s for analysis.",
     image: "https://www.valeo.com/wp-content/uploads/2022/01/driver-monitoring_05_v2-1_0x0_acf_cropped-scaled.jpg",
     tags: ["Python", "OpenCV", "Mediapipe",  "Computer Vision"],
     github: "https://github.com/aLok-1105/driver-monitoring-system",
-    // demo: "https://ecommerce-demo.com",
   },
   {
     title: "Traventure",
