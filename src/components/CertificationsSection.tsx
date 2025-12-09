@@ -23,6 +23,14 @@ const certifications: CertificationItem[] = [
     credentialUrl: "https://www.udemy.com/certificate/UC-feccf36e-289b-4fdf-a8aa-d6def9ecfd4c/",
     image: "https://udemy-certificate.s3.amazonaws.com/image/UC-feccf36e-289b-4fdf-a8aa-d6def9ecfd4c.jpg?v=1757161688000",
   },
+	{
+    title: "Al Engineer Agentic Track: The Complete Agent & MCP Course",
+    issuer: "Udemy",
+    issueDate: "Dec 2025",
+    skills: ["OpenAI Agents SDK", "Agentic AI", "Python", "MCP", "LangGraph"],
+    credentialUrl: "https://www.udemy.com/certificate/UC-127a9ff3-eb6d-469b-9b18-60d35ddd8e59/",
+    image: "https://udemy-certificate.s3.amazonaws.com/image/UC-127a9ff3-eb6d-469b-9b18-60d35ddd8e59.jpg?v=1764842731000",
+  }
 ];
 
 const CertificationsSection: React.FC = () => {
