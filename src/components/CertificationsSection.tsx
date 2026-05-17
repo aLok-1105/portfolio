@@ -16,6 +16,15 @@ interface CertificationItem {
 
 const certifications: CertificationItem[] = [
   {
+    title: "Java Spring Framework, Spring Boot, Spring AI - Gen AI",
+    issuer: "Udemy",
+    issueDate: "May 2026",
+    credentialId: "UC-ba16ee37-0eee-4838-9da7-d3045c6722dd",
+    skills: ["Spring AI", "Hibernate", "JAVA", "Spring Security", "Microservices"],
+    credentialUrl: "https://www.udemy.com/certificate/UC-ba16ee37-0eee-4838-9da7-d3045c6722dd/",
+    image: "https://udemy-certificate.s3.amazonaws.com/image/UC-ba16ee37-0eee-4838-9da7-d3045c6722dd.jpg",
+  },
+  {
     title: "Generative AI for NodeJs: OpenAI, LangChain - TypeScript",
     issuer: "Udemy",
     issueDate: "Sept 2025",
