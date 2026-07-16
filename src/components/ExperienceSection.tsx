@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Briefcase, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { 
   Accordion,
   AccordionContent,
@@ -9,16 +9,48 @@ import {
 
 const experienceData = [
   {
+    company: "Deloitte USI",
+    position: "Software Engineer -1",
+    duration: "July 2025 - Present",
+    description: [
+      "Designed and developed 40+ RESTful APIs using Java Spring Boot to trigger Informatica Intelligent Data Management Cloud (IDMC) jobs and custom processes.",
+      "Developed secure authentication and authorization using Spring Security, JWT, and OAuth 2.0, ensuring compliance with enterprise security and data-protection standards.",
+      "Performed end-to-end integration testing using Postman, SQL, and AKHQ to validate data flow from source systems to Apache Kafka consumers, ensuring high data accuracy.",
+      "Collaborated in Agile/Scrum teams, participating in sprint planning, code reviews, and daily standups while using JIRA and Confluence to deliver features on schedule.",
+      "Received both Spot Award and Applause Award within a single project.",
+    ],
+    logo: {
+      light: "https://thewealthmosaic.s3.amazonaws.com/media/Logo_Deloitte.png",
+      dark: "https://www.deloitte.com/content/dam/assets-shared/logos/svg/a-d/deloitte.svg",
+    },
+    tools: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Spring Security",
+      "JWT",
+      "OAuth 2.0",
+      "Informatica IDMC",
+      "Apache Kafka",
+      "AKHQ",
+      "SQL",
+      "Postman",
+      "JIRA",
+      "Confluence",
+      "Agile/Scrum",
+    ],
+  },
+  {
     company: "IIT Roorkee",
     position: "Research Intern",
     duration: "May 2024 - July 2024",
     description: [
-      " Developed the Driver Monitoring System Project to recognize the state of the driver.",
-      " Implemented various algorithms and researched to enhance driver safety while driving the vehicle.",
+      "Developed the Driver Monitoring System Project to recognize the state of the driver.",
+      "Implemented various algorithms and researched to enhance driver safety while driving the vehicle.",
       "Used Python image processing libraries to implement algorithms and develop the project.",
     ],
     logo: "https://iitr.ac.in/space2023/assets/iitr_logo.png",
-    tools: ["Python", "OpenCV", "Mediapipe",  "Computer Vision"],
+    tools: ["Python", "OpenCV", "Mediapipe", "Computer Vision"],
   },
 ];
 
@@ -40,12 +72,27 @@ export default function ExperienceSection() {
               >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline">
                   <div className="flex items-center w-full">
-                    <div className="w-12 h-12 mr-4 flex-shrink-0">
-                      <img
-                        src={exp.logo}
-                        alt={exp.company}
-                        className="w-full h-full object-contain"
-                      />
+                    <div className="w-24 h-12 mr-4 flex-shrink-0">
+                      {typeof exp.logo === "string" ? (
+                        <img
+                          src={exp.logo}
+                          alt={exp.company}
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <>
+                          <img
+                            src={exp.logo.light}
+                            alt={exp.company}
+                            className="block w-full h-full object-contain dark:hidden"
+                          />
+                          <img
+                            src={exp.logo.dark}
+                            alt={exp.company}
+                            className="hidden w-full h-full object-contain dark:block"
+                          />
+                        </>
+                      )}
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">{exp.position}</h3>
