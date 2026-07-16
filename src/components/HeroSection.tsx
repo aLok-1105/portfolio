@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   const handleDownload = () => {
-    const resumeUrl = "https://drive.google.com/file/d/1ngcOGeM--beAy0Rns6SdXHBk3KPnlyxC/view?usp=drive_link";
+    const resumeUrl = "https://drive.google.com/file/d/1UnCgBK9cbAF8JYFe561v-6Xy1W8otuHV/view?usp=drive_link";
     window.open(resumeUrl, '_blank');
   };
 
