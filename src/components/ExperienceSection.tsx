@@ -19,7 +19,7 @@ const experienceData = [
       "Collaborated in Agile/Scrum teams, participating in sprint planning, code reviews, and daily standups while using JIRA and Confluence to deliver features on schedule.",
       "Received both Spot Award and Applause Award within a single project.",
     ],
-    logo: "https://upload.wikimedia.org/wikipedia/commons/5/56/Deloitte.svg",
+    logo: "/deloitte.svg",
     tools: [
       "Java",
       "Spring Boot",
@@ -69,7 +69,7 @@ export default function ExperienceSection() {
               >
                 <AccordionTrigger className="px-6 py-4 hover:no-underline">
                   <div className="flex items-center w-full">
-                    <div className="w-12 h-12 mr-4 flex-shrink-0">
+                    <div className="w-24 h-12 mr-4 flex-shrink-0">
                       <img
                         src={exp.logo}
                         alt={exp.company}
