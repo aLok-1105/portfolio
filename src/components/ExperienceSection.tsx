@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Briefcase, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { 
   Accordion,
   AccordionContent,
@@ -9,16 +9,45 @@ import {
 
 const experienceData = [
   {
+    company: "Deloitte USI",
+    position: "Software Engineer -1",
+    duration: "July 2025 - Present",
+    description: [
+      "Designed and developed 40+ RESTful APIs using Java Spring Boot to trigger Informatica Intelligent Data Management Cloud (IDMC) jobs and custom processes.",
+      "Developed secure authentication and authorization using Spring Security, JWT, and OAuth 2.0, ensuring compliance with enterprise security and data-protection standards.",
+      "Performed end-to-end integration testing using Postman, SQL, and AKHQ to validate data flow from source systems to Apache Kafka consumers, ensuring high data accuracy.",
+      "Collaborated in Agile/Scrum teams, participating in sprint planning, code reviews, and daily standups while using JIRA and Confluence to deliver features on schedule.",
+      "Received both Spot Award and Applause Award within a single project.",
+    ],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/5/56/Deloitte.svg",
+    tools: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Spring Security",
+      "JWT",
+      "OAuth 2.0",
+      "Informatica IDMC",
+      "Apache Kafka",
+      "AKHQ",
+      "SQL",
+      "Postman",
+      "JIRA",
+      "Confluence",
+      "Agile/Scrum",
+    ],
+  },
+  {
     company: "IIT Roorkee",
     position: "Research Intern",
     duration: "May 2024 - July 2024",
     description: [
-      " Developed the Driver Monitoring System Project to recognize the state of the driver.",
-      " Implemented various algorithms and researched to enhance driver safety while driving the vehicle.",
+      "Developed the Driver Monitoring System Project to recognize the state of the driver.",
+      "Implemented various algorithms and researched to enhance driver safety while driving the vehicle.",
       "Used Python image processing libraries to implement algorithms and develop the project.",
     ],
     logo: "https://iitr.ac.in/space2023/assets/iitr_logo.png",
-    tools: ["Python", "OpenCV", "Mediapipe",  "Computer Vision"],
+    tools: ["Python", "OpenCV", "Mediapipe", "Computer Vision"],
   },
 ];
 
