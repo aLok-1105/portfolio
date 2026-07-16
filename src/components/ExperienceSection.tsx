@@ -19,7 +19,10 @@ const experienceData = [
       "Collaborated in Agile/Scrum teams, participating in sprint planning, code reviews, and daily standups while using JIRA and Confluence to deliver features on schedule.",
       "Received both Spot Award and Applause Award within a single project.",
     ],
-    logo: "/deloitte.svg",
+    logo: {
+      light: "https://thewealthmosaic.s3.amazonaws.com/media/Logo_Deloitte.png",
+      dark: "https://www.deloitte.com/content/dam/assets-shared/logos/svg/a-d/deloitte.svg",
+    },
     tools: [
       "Java",
       "Spring Boot",
@@ -70,11 +73,26 @@ export default function ExperienceSection() {
                 <AccordionTrigger className="px-6 py-4 hover:no-underline">
                   <div className="flex items-center w-full">
                     <div className="w-24 h-12 mr-4 flex-shrink-0">
-                      <img
-                        src={exp.logo}
-                        alt={exp.company}
-                        className="w-full h-full object-contain"
-                      />
+                      {typeof exp.logo === "string" ? (
+                        <img
+                          src={exp.logo}
+                          alt={exp.company}
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <>
+                          <img
+                            src={exp.logo.light}
+                            alt={exp.company}
+                            className="block w-full h-full object-contain dark:hidden"
+                          />
+                          <img
+                            src={exp.logo.dark}
+                            alt={exp.company}
+                            className="hidden w-full h-full object-contain dark:block"
+                          />
+                        </>
+                      )}
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">{exp.position}</h3>
